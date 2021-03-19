@@ -15,6 +15,8 @@
     "fabric/contracts": "dev-master"
   },
   "autoload": {
-    "Fabric\\Loader\\": "src"
+    "psr-4": {
+      "Fabric\\Loader\\": "src"
+    }
   }
 }
