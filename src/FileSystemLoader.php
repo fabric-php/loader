@@ -2,7 +2,7 @@
 
 namespace Fabric\Loader;
 
-use Fabric\Loader\Exception\TemplateNotFound;
+use Interop\Template\Exception\TemplateNotFound;
 
 final class FileSystemLoader implements TemplateLoaderInterface
 {
@@ -36,6 +36,6 @@ final class FileSystemLoader implements TemplateLoaderInterface
             return file_get_contents($path);
         }
 
-        throw TemplateNotFound::withName($templateName);
+        throw TemplateNotFound::fromName($templateName);
     }
 }
