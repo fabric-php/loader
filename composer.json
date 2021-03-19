@@ -1,0 +1,20 @@
+{
+  "name": "fabric/loader",
+  "description": "Fabric template loader",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Keven",
+      "email": "hello@keven.fr"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.4",
+    "fabric/contracts": "dev-master"
+  },
+  "autoload": {
+    "Fabric\\Loader\\": "src"
+  }
+}
