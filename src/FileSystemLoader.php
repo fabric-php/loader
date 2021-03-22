@@ -6,13 +6,13 @@ use Interop\Template\Exception\TemplateNotFound;
 
 final class FileSystemLoader implements TemplateLoaderInterface
 {
-    private string $extension;
     private array $directories;
+    private string $extension;
 
-    public function __construct(string $extension, array $directories)
+    public function __construct(array $directories, string $extension = '.php')
     {
-        $this->extension = $extension;
         $this->directories = $directories;
+        $this->extension = $extension;
     }
 
     /**
