@@ -12,7 +12,7 @@
   "minimum-stability": "dev",
   "require": {
     "php": "^7.4",
-    "template-interop/engine": "dev-master"
+    "template-interop/engine": "^0.0.2"
   },
   "autoload": {
     "psr-4": {
